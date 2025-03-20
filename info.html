@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mary Claire | Personal Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body { 
+            color: #ffcc00; 
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar */
+        .navbar { 
+            background-color: #ffffff;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 10px 0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand, .nav-link {
+            color: #000000 !important;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #ffcc00 !important;
+            transform: scale(1.1);
+        }
+
+        .btn-toggle { 
+            background-color: #e0e052; 
+            color: #111; 
+        }
+
+        .btn-toggle:hover { 
+            background-color: #ffdb4d; 
+        }
+
+        /* Section Styling */
+        .section {
+            width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            padding: 120px 5% 50px;
+            background-color: #222;
+            transition: background-color 0.5s ease-in-out;
+        }
+
+        .section-content {
+            display: flex;  
+            align-items: center;
+            gap: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        /* Image Styling */
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .image-container img {
+            width: 250px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0px 4px 10px rgba(32, 32, 31, 0.5);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Text Box */
+        .text-box {
+            flex: 2;
+            text-align: left;
+        }
+
+        .text-box h2 {
+            font-size: 2rem;
+            color: #ffdb4d;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .text-box h2:hover {
+            color: #ffffff;
+        }
+
+        .text-box p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #e0e0e0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .image-container img {
+                width: 180px;
+            }
+        }
+
+        #back-to-top {
+        position: fixed;
+        font-size: small;
+        bottom: 20px;
+        right: 20px;
+        background-color: #383838;
+        color: white;
+        padding: 12px 18px;
+        border-radius: 50px;
+        text-decoration: none;
+        display: none;
+        cursor: pointer;
+        transition: background 0.3s;
+         }
+
+        /* Section Background Effects */
+        #about { background: linear-gradient(135deg, #2b2b2b, #1e1e1e); }
+        #projects { background: linear-gradient(135deg, #343434, #1e1e1e); }
+        #skills { background: linear-gradient(135deg, #2b2b2b, #1e1e1e); }
+        #contact { background: linear-gradient(135deg, #343434, #1e1e1e); }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">My Profile</a>
+            <button class="navbar-toggler btn-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <a href="#" id="back-to-top">↑ Back to Top</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="section-content">
+            <div class="image-container">
+                <img src="me.jpg" alt="Profile">
+            </div>
+            <div class="text-box">
+                <h2>About Me</h2>
+                <p>Mary Claire Taer is a dedicated 3rd-year BSIT student at Pateros Technological College with a passion for technology, coding, and problem-solving. She enjoys programming, designing, and optimizing systems while staying up-to-date with the latest tech trends.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="section-content">
+            <div class="image-container">
+                <img src="ptc.jpg" alt="Projects">
+            </div>
+            <div class="text-box">
+                <h2>Educational Background</h2>
+                <p>Mary Claire Taer is a 3rd-year BSIT student at Pateros Technological College with a strong foundation in programming and technology. She is skilled in Java for cross-platform applications, MySQL for database management, and HTML & CSS for web development. Additionally, she has experience with JavaScript and PHP, enabling her to create interactive web applications. Passionate about innovation, she continuously explores new tools and technologies to enhance her expertise in software development, web design, and database management.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="section-content">
+            <div class="image-container">
+                <img src="java.jpg" alt="Skills">
+            </div>
+            <div class="text-box">
+                <h2>Skills & Tools</h2>
+                <p><strong>Programming:</strong> Java, JavaScript, PHP, Python</p>
+                <p><strong>Web Development:</strong> HTML, CSS, Bootstrap</p>
+                <p><strong>Database:</strong> MySQL</p>
+                <p><strong>Version Control:</strong> GitHub</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="section-content">
+            <div class="image-container">
+                <img src="op.jpg" alt="Contact">
+            </div>
+            <div class="text-box">
+                <h2>Contact Me</h2>
+                <p>Email: <a href="#"> mctaer@paterostechnologicalcollege.edu.ph</a></p>
+                <p>GitHub: <a href="https://github.com/yourprofile" target="_blank">github.com/yourprofile</a></p>
+                <p>Facebook: <a href="https://www.facebook.com/maryclaire.taer" target="_blank">Mary Claire Taer</a></p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const backToTopButton = document.getElementById("back-to-top");
+
+            window.addEventListener("scroll", function() {
+                if (window.scrollY > 300) {
+                    backToTopButton.style.display = "block";
+                } else {
+                    backToTopButton.style.display = "none";
+                }
+            });
+
+            backToTopButton.addEventListener("click", function(event) {
+                event.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
